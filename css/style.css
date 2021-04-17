@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body, html, section {
     height: 100%;
     width: 100%;
@@ -8,35 +11,62 @@ body, html, section {
 }
 /* header */
 header {
-    width: 100%;
-    height: 7%;
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding: 5px 0px;
     position: fixed;
-    top: 0px;
     left: 0px;
-    background-color: #7843B5;
+    width: 100%;
     z-index: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+}
+#dark_mode, header a {
+    float: left;
+    color: rgb(15, 15, 15);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
 }
 #menu_conteudo {
-    position: relative;
-    left: 65%;
-    top: 35%;
-}
-header ul {
-    margin: 0px;
-    padding: 0px;
-}
-header li {
-    display: inline;
-    margin: 3vmin;
+    float: right;
 }
 header a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-weight: 500;
-    font-family: 'Libre Franklin', sans-serif;
+    margin: 0px 20px 0px 20px;
+    cursor: pointer;
 }
-header button {
+#dark_mode {
+    font-size: 25px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+    margin: 0px 20px 0px 20px;
+}
+
+#mobile_menu {
     display: none;
+    background-color: transparent;
+    color: rgb(15, 15, 15);
+    border: none;
+    border-radius: 2px;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+}
+
+#dark_mode:hover, header a:hover{
+    background-color: #502D67;
+    color: whitesmoke;
+}
+.active {
+    background-color: #502D67;
+    color: whitesmoke;
+}
+@media screen and (max-width: 650px) {
+    header {
+        display: none;
+    }
 }
 /* home */
 #home_conteudo {
@@ -45,7 +75,11 @@ header button {
     left: 50%;
     transform: translateX(-90%) translateY(-50%);
     width: 50%;
-    text-align: left;
+    text-align: center;
+}
+#perfil {
+    width: 30vmin;
+    border-radius: 50%;
 }
 #sobre_conteudo {
     position: relative;
@@ -57,7 +91,7 @@ header button {
 }
 h1 {
     font-size: 5vmin;
-    color: #7843B5;
+    color: #502D67;
 }
 h2 {
     font-size: 3.5vmin;

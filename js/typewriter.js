@@ -1,5 +1,5 @@
 let i = 0;
-let speed = 100;
+let speed = 50;
 let nome = 'Desenvolvedor Front-end'
 
 window.onload = typeWriter();

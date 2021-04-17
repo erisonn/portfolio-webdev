@@ -12,19 +12,20 @@
 </head>
 
 <body>
+
     <header>
-        <button id="mobile_menu"><i class="fa fa-bars"></i></button>
+        <button id="dark_mode"><i class="fa fa-adjust"></i></button>
         <div id="menu_conteudo">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Conhecimentos</a></li>
-                <li><a href="">Contatos</a></li>
-            </ul>
+            <a id="home_click" class="active">Home</a>
+            <a id="sobre_click">Sobre</a>
+            <a id="conhecimentos_click">Conhecimentos</a>
+            <a id="contato_click">Contato</a>
         </div>
     </header>
+
     <section id="home">
         <div id="home_conteudo">
+            <img src="./img/perfil.jpg" id="perfil" alt="">
             <h1>Erison Guimarães dos Santos</h1>
             <h2 id="typewriter"></h2>
         </div>
@@ -35,9 +36,10 @@
             <p>Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório. Tem raízes numa peça de literatura clássica em Latim, de 45 AC, tornando-o com mais de 2000 anos.</p>
         </div>
     </section>
-    <section></section>
-    <section></section>
+    <section id="conhecimentos"></section>
+    <section id="contato"></section>
     
     <script src="./js/typewriter.js"></script>
+    <script src="./js/smoothscroll.js"></script>
 </body>
 </html>
