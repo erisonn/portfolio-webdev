@@ -81,6 +81,7 @@ header a {
     width: 30vmin;
     border-radius: 50%;
 }
+/*sobre */
 #sobre_conteudo {
     position: relative;
     top: 45%;
@@ -88,6 +89,14 @@ header a {
     transform: translateX(-10%) translateY(-50%);
     width: 50%;
     text-align: right;
+}
+/* conhecimentos */
+#conhecimentos_conteudo {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-90%) translateY(-50%);
+    width: 50%;
 }
 h1 {
     font-size: 5vmin;
