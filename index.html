@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6bfb9000e2.js" crossorigin="anonymous"></script>
     <title>Erison Guimarães - Desenvolvedor Front-end</title>
 </head>
 
 <body>
 
     <header>
-        <button id="dark_mode"><i class="fa fa-adjust"></i></button>
+        <button id="darkmode_click"><i class="far fa-moon"></i></button>
         <div id="menu_conteudo">
             <a id="home_click" class="active">Home</a>
             <a id="sobre_click">Sobre</a>
@@ -42,6 +42,12 @@
         <div id="conhecimentos_conteudo">
             <h1>Conhecimentos</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae maximus ex. Nam euismod quam lectus, eget auctor sem elementum non.</p>
+            <div class="conhecimentos_lista">
+                <div class="conhecimentos_itens"><i class="fa fa-html5"></i></div>
+                <div class="conhecimentos_itens"><i class="fa fa-css3"></i></div>
+                <div class="conhecimentos_itens"><i class="fab fa-js-square"></i></div>
+                <div class="conhecimentos_itens"><i class="fab fa-git"></i></div>
+            </div>
         </div>
     </section>
 
@@ -49,5 +55,6 @@
     
     <script src="./js/typewriter.js"></script>
     <script src="./js/smoothscroll.js"></script>
+    <script src="./js/darkmode.js"></script>
 </body>
 </html>

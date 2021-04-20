@@ -5,6 +5,8 @@ body, html, section {
     height: 100%;
     width: 100%;
     margin: 0;
+}
+body {
     background-color: whitesmoke;
     font-family: 'Libre Franklin', sans-serif;
     color: rgb(15, 15, 15);
@@ -20,7 +22,7 @@ header {
     z-index: 1;
     border-bottom: 1px solid rgba(0, 0, 0, 0.082);
 }
-#dark_mode, header a {
+#darkmode_click, header a {
     float: left;
     color: rgb(15, 15, 15);
     text-align: center;
@@ -37,7 +39,7 @@ header a {
     margin: 0px 20px 0px 20px;
     cursor: pointer;
 }
-#dark_mode {
+#darkmode_click {
     font-size: 25px;
     background-color: transparent;
     border-style: none;
@@ -55,13 +57,8 @@ header a {
     margin: 0px 20px 0px 20px;
 }
 
-#dark_mode:hover, header a:hover{
-    background-color: #502D67;
-    color: whitesmoke;
-}
-.active {
-    background-color: #502D67;
-    color: whitesmoke;
+header a:hover, #darkmode_click:hover {
+    opacity: 0.9;
 }
 @media screen and (max-width: 650px) {
     header {
@@ -98,6 +95,15 @@ header a {
     transform: translateX(-90%) translateY(-50%);
     width: 50%;
 }
+.conhecimentos_lista {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 3vmin;
+}
+.conhecimentos_itens {
+    font-size: 5vmin;
+    color: #502D67;
+}
 h1 {
     font-size: 5vmin;
     color: #502D67;
@@ -109,4 +115,15 @@ h2 {
 }
 p {
     font-size: 3vmin;
+}
+.active {
+    background-color: #502D67;
+    color: whitesmoke;
+}
+.dark_mode {
+    background-color: #141414;
+    color: #ccc;
+}
+.dark_mode a, .dark_mode h2 {
+    color: #ccc;
 }
