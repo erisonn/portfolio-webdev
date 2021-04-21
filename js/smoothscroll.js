@@ -9,6 +9,7 @@ home_click.addEventListener('click', function() {
         home_click.classList.add('active');
     }
 })
+
 // sobre
 let sobre_click = document.getElementById('sobre_click');
 sobre_click.addEventListener('click', function() {
@@ -19,6 +20,7 @@ sobre_click.addEventListener('click', function() {
         sobre_click.classList.add('active');
     }
 })
+
 // conhecimentos
 let conhecimentos_click = document.getElementById('conhecimentos_click');
 conhecimentos_click.addEventListener('click', function() {

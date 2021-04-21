@@ -1,32 +1,31 @@
-html {
-    scroll-behavior: smooth;
-  }
-body, html, section {
+html, body {
     height: 100%;
     width: 100%;
-    margin: 0;
+    margin: 0px;
+    scroll-behavior: smooth;
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
 }
-body {
-    background-color: whitesmoke;
-    font-family: 'Libre Franklin', sans-serif;
-    color: rgb(15, 15, 15);
+section {
+    height: 100%;
+    width: 100%;
 }
+
 /* header */
 header {
-    overflow: hidden;
     background-color: whitesmoke;
     padding: 5px 0px;
     position: fixed;
     left: 0px;
+    top: 0px;
     width: 100%;
     z-index: 1;
     border-bottom: 1px solid rgba(0, 0, 0, 0.082);
 }
-#darkmode_click, header a {
+.github_click, header a {
     float: left;
     color: rgb(15, 15, 15);
     text-align: center;
-    padding: 12px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
@@ -36,15 +35,17 @@ header {
     float: right;
 }
 header a {
+    padding: 12px;
     margin: 0px 20px 0px 20px;
     cursor: pointer;
 }
-#darkmode_click {
-    font-size: 25px;
+.github_click {
+    font-size: 50px;
     background-color: transparent;
     border-style: none;
     cursor: pointer;
     margin: 0px 20px 0px 20px;
+    color: #94167f;
 }
 
 #mobile_menu {
@@ -57,7 +58,7 @@ header a {
     margin: 0px 20px 0px 20px;
 }
 
-header a:hover, #darkmode_click:hover {
+header a:hover, #github_click:hover {
     opacity: 0.9;
 }
 @media screen and (max-width: 650px) {
@@ -65,12 +66,16 @@ header a:hover, #darkmode_click:hover {
         display: none;
     }
 }
+
 /* home */
+section:nth-child(2) {
+    background-image: linear-gradient(-90deg, #300350, #94167f);
+}
 #home_conteudo {
     position: relative;
     top: 45%;
     left: 50%;
-    transform: translateX(-90%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     width: 50%;
     text-align: center;
 }
@@ -78,7 +83,11 @@ header a:hover, #darkmode_click:hover {
     width: 30vmin;
     border-radius: 50%;
 }
+
 /*sobre */
+section:nth-child(3) {
+    background-color: #e93479;
+}
 #sobre_conteudo {
     position: relative;
     top: 45%;
@@ -87,7 +96,11 @@ header a:hover, #darkmode_click:hover {
     width: 50%;
     text-align: right;
 }
+
 /* conhecimentos */
+section:nth-child(4) {
+    background-color: #f62e97;
+}
 #conhecimentos_conteudo {
     position: relative;
     top: 45%;
@@ -102,28 +115,48 @@ header a:hover, #darkmode_click:hover {
 }
 .conhecimentos_itens {
     font-size: 5vmin;
-    color: #502D67;
+    color: whitesmoke;
 }
+
+/* contato */
+section:nth-child(5) {
+    background-image: linear-gradient(-90deg, #b32d60, #f62e97)
+}
+#contato_conteudo {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    text-align: center;
+}
+.contato_lista {
+    position: relative;
+    top: 20px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 3vmin;
+}
+.contato_itens {
+    font-size: 5vmin;
+    color: whitesmoke;
+}
+
+/* geral */
 h1 {
     font-size: 5vmin;
-    color: #502D67;
+    color: whitesmoke;
+    margin: 0px;
 }
 h2 {
     font-size: 3.5vmin;
     font-weight: 500;
-    color: rgb(15, 15, 15);
+    color: whitesmoke;
 }
 p {
     font-size: 3vmin;
 }
 .active {
-    background-color: #502D67;
+    background-color: #300350;
     color: whitesmoke;
-}
-.dark_mode {
-    background-color: #141414;
-    color: #ccc;
-}
-.dark_mode a, .dark_mode h2 {
-    color: #ccc;
 }

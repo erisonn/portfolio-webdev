@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/6bfb9000e2.js" crossorigin="anonymous"></script>
     <title>Erison Guimarães - Desenvolvedor Front-end</title>
 </head>
@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <button id="darkmode_click"><i class="far fa-moon"></i></button>
+        <button class="github_click"><i class="fab fa-github-square"></i></button>
         <div id="menu_conteudo">
             <a id="home_click" class="active">Home</a>
             <a id="sobre_click">Sobre</a>
@@ -25,8 +25,7 @@
 
     <section id="home">
         <div id="home_conteudo">
-            <img src="./img/perfil.jpg" id="perfil" alt="">
-            <h1>Erison Guimarães dos Santos</h1>
+            <h1>[Erison Guimarães dos Santos]</h1>
             <h2 id="typewriter"></h2>
         </div>
     </section>
@@ -51,7 +50,16 @@
         </div>
     </section>
 
-    <section id="contato"></section>
+    <section id="contato">
+        <div id="contato_conteudo">
+            <h1>Contato</h1>
+            <div class="contato_lista">
+                <div class="contato_itens"><i class="fab fa-linkedin"></i></div>
+                <div class="contato_itens"><i class="fas fa-envelope"></i></div>
+                <div class="contato_itens"><i class="fab fa-whatsapp-square"></i></div>
+            </div>
+        </div>
+    </section>
     
     <script src="./js/typewriter.js"></script>
     <script src="./js/smoothscroll.js"></script>
