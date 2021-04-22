@@ -12,14 +12,19 @@ home_click.addEventListener('click', function() {
 
 // sobre
 let sobre_click = document.getElementById('sobre_click');
-sobre_click.addEventListener('click', function() {
+sobre_click.addEventListener('click', continuar)
+
+let arrow_click = document.getElementById('continuar');
+arrow_click.addEventListener('click', continuar)
+
+function continuar() {
     document.getElementById('sobre').scrollIntoView();
     let elems = document.querySelectorAll('.active');
     for(i in elems) {
         elems[i].classList.remove('active');
         sobre_click.classList.add('active');
     }
-})
+}
 
 // conhecimentos
 let conhecimentos_click = document.getElementById('conhecimentos_click');
