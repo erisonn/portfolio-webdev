@@ -44,6 +44,7 @@ header a {
     background-color: transparent;
     border-style: none;
     cursor: pointer;
+    padding: 0px;
     margin: 0px 20px 0px 20px;
     color: #94167f;
 }
@@ -155,6 +156,9 @@ section:nth-child(5) {
 }
 .contato_itens {
     font-size: 5vmin;
+    color: whitesmoke;
+}
+#contato_conteudo a {
     color: whitesmoke;
 }
 

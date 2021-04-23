@@ -1,4 +1,4 @@
-
+let elems = document.querySelectorAll('.active')
 // home
 let home_click = document.getElementById('home_click');
 home_click.addEventListener('click', function() {
@@ -47,3 +47,34 @@ contato_click.addEventListener('click', function() {
         contato_click.classList.add('active');
     }
 })
+
+let sections = document.querySelectorAll('section');
+
+onscroll = function() {
+    let scrollPosition = document.documentElement.scrollTop;
+    
+    sections.forEach( section => {
+        if(scrollPosition >= section.offsetTop && scrollPosition < section.offsetTop + section.offsetHeight) {
+            for(i in elems) {
+                if(section.attributes.id.value == 'home') {
+                    let elems = document.querySelectorAll('.active');
+                    elems[i].classList.remove('active');
+                    home_click.classList.add('active');
+                }
+                if (section.attributes.id.value == 'sobre') {
+                    let elems = document.querySelectorAll('.active');
+                    elems[i].classList.remove('active');
+                    sobre_click.classList.add('active');
+                } else if (section.attributes.id.value == 'conhecimentos') {
+                    let elems = document.querySelectorAll('.active');
+                    elems[i].classList.remove('active');
+                    conhecimentos_click.classList.add('active');
+                } else if (section.attributes.id.value == 'contato') {
+                    let elems = document.querySelectorAll('.active');
+                    elems[i].classList.remove('active');
+                    contato_click.classList.add('active');
+                }
+            }
+        }
+    })
+}
