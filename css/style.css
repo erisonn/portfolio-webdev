@@ -31,13 +31,16 @@ header {
     line-height: 25px;
     border-radius: 4px;
 }
-#menu_conteudo {
+#menu_direita {
     float: right;
 }
 header a {
     padding: 12px;
     margin: 0px 20px 0px 20px;
     cursor: pointer;
+}
+header a:hover {
+    opacity: 0.9;
 }
 .github_click {
     font-size: 50px;
@@ -48,32 +51,41 @@ header a {
     margin: 0px 20px 0px 20px;
     color: #94167f;
 }
+
 /* header mobile */
-#mobile_menu {
-    height: 35px;
-    text-align: center;
-    background-color: whitesmoke;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 5px;
-    background-color: transparent;
-    width: 50%;
-    height: 50px;
-}
-#mobile_click {
-    font-size: 25px;
-    background-color: transparent;
-    padding: 0px;
-    width: 30%;
-    height: 100%;
-    color: whitesmoke;
-    border: none;
-    cursor: pointer;
-}
-header a:hover {
-    opacity: 0.9;
-}
+    .dropbtn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 5px 10px;
+        font-size: 25px;
+        color: whitesmoke;
+    }
+    .dropdown {
+        position: fixed;
+        display: inline-block;
+        text-align: center;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    .dropdown_conteudo {
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    .dropdown_conteudo a {
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .show {
+        display: block;
+    }
+
 @media screen and (max-width: 650px) {
     header {
         display: none;
@@ -82,7 +94,7 @@ header a:hover {
 
 /* home */
 section:nth-child(3) {
-    background-image: linear-gradient(-180deg,  #94167f, #300350);
+    background-image: linear-gradient(-90deg,  #94167f, rgb(0, 121, 111));
 }
 #home_conteudo {
     position: relative;
